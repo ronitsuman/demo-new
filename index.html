@@ -1,19 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>trying to create a two box</title>
     <style>
-        .main{
-            
-        }
+      .main {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        min-width: 200px;
+        max-width: fit-content;
+      }
+
+      .f {
+        width: 50%;
+        height: 500px;
+        /* border: 1px solid green; */
+        display: flexbox;
+        margin-block: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        background-color: black;
+
+      }
+
+      .s {
+        width: 50%;
+        height: 500px;
+        /* border: 1px solid green; */
+        display: flexbox;
+        margin-block: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        background-color: black;
+      }
+      .f {
+        background-image: url(pexels-tyler-lastovich-1671643.jpg);
+        background-size: 320px;
+
+        background-repeat: no-repeat;
+        box-shadow: 30px 20px 10px;
+        filter: blur(20px 40px 30px);
+      }
+      .s {
+        background-image: url(pexels-cottonbro-studio-3826435.jpg);
+        background-size:420px;
+        
+        background-repeat: no-repeat;
+        box-shadow: 1px 20px 10px ; 
+      }
+      h2 {
+        color: cornflowerblue;
+        text-align: center;
+        margin-top: 30px;
+        text-transform: capitalize;
+      }
+      p {
+        color: cornflowerblue;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .s{
+        color: rgb(30, 210, 99);
+        
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div class="f"></div>
-        <div class="s"></div>
+      <div class="f">
+        <h2 id="change-text">Be Mine plzz (don't Click me ,i don't want to change )</h2>
+        <p>
+          why this all happening to me when i want to remove all the negativity
+          from myself but i always get my self into the dark always
+        </p>
+        <p id="d">
+          i think too much about anything that was the reason for my sadnees
+        </p>
+      </div>
+      <div class="s">
+        <h2>be Mine plz </h2>
+        <form action="">
+          <label for="name">Name :</label>
+          <input type="text" name="name" id="">
+          <hr>
+          <label for="gender">You are Intersted in :</label>
+          <label for="male">Male</label>
+          
+          <input type="radio" name="gender" id="gender">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="gender">
+          <hr>
+          <label for="relationship">RelationShip :</label>
+          <input type="radio" name="relationship" id="relationship">
+          <label for="relationship">Ongoing</label>
+
+           <input type="radio" name="relationship" id="relationship">
+          <label for="relationship">Searching </label>
+         
+          <input type="radio" name="relationship" id="relationship">
+          <label for="relationship">Bad relationship </label>
+         
+          <hr>
+          <label for="hobbies">Hobbies : </label>
+          <input type="checkbox" name="hobbies" id="">
+          <label for="hobbies">Travel </label>
+          <input type="checkbox" name="hobbies" id="">
+          <label for="hobbies">Music </label>
+          <input type="checkbox" name="hobbies" id="">
+          <label for="hobbies">Talkative </label>
+          <input type="checkbox" name="hobbies" id="">
+          <label for="hobbies">Introvert </label>
+          <input type="checkbox" name="hobbies" id="">
+          <label for="hobbies">Tea or cofee </label>
+          <label for="textarea"></label>
+          <textarea name="textarea" id="" cols="20" rows="5" placeholder="any thing you like submit here "></textarea>
+          <hr>
+          <button type="submit">SUBMIT</button>
+          
+
+
+        </form>
+        
+      </div>
     </div>
-</body>
+    <script>
+      const changeText = document.querySelector("#change-text");
+
+      changeText.addEventListener("click", function () {
+        changeText.textContent = "IN NEXT LIFE WE WILL BE TOGETHER ";
+      });
+      let newText = document.querySelector("#newText") ;
+
+      newText.addEventListener("click" , function() {
+        newText.textContent = "soch aa hi jati hai kaise roke khud ko"
+      });
+     
+   
+
+    </script>
+  </body>
 </html>
